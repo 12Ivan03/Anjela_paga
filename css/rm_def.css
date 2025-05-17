@@ -1,5 +1,8 @@
 
 /* 1. Box sizing reset */
+html {
+  font-size: 16px;
+}
 *,
 *::before,
 *::after {
@@ -60,16 +63,41 @@ select {
 }
 
 /* 8. Prevent text overflow */
-p,
-h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
   overflow-wrap: break-word;
 }
 
+h1
+{
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2
+{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3
+{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.p_bold
+{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.p_trans{
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 600;
+}
 /* 9. Create a stacking context */
 #root,
 #__next {

@@ -1,24 +1,26 @@
+
 .nav_menu
 {
 	background-color: #000000;
 	display: flex;
 	flex-direction: row;
-	height: 18vh;
+	height: 9vh;
 	width: 100vw;
 }
 
 .menu
 {
 	width: 100%;
-	height: 15vh;
+	height: 9vh;
 	background-color: #000000;
 	display: flex;
-	flex-direction: row;
-	align-content: start;
+	/* flex-direction: row; */
+	align-content: center;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	padding: 2vw 0 0 0;
+	/* padding: 2vw 0 0 0; */
 	/* margin 1vw-bottom: 20vh; */
+	margin-right: 2vw;
 }
 
 .menu > li
@@ -54,24 +56,6 @@
 	margin-left: 13%;
 }
 
-.festivalUnder > li > a
-{
-	color: aliceblue;
-	font-weight: bold;
-}
-
-.tickets
-{
-	background-color: aliceblue;
-	width: 60%;
-}
-
-.tickets > a
-{
-	color: #000000!important;
-	background-color: aliceblue;
-}
-
 .language
 {
 	height: 100%;
@@ -94,15 +78,81 @@
 }
 
 
+
+.main_container {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  }
+
+.main_border
+{
+	max-width: 1366px;
+	background-image: url(../images/САЙТ_Антон_фон_1.png);
+	/* background-size: cover;
+	background-repeat: no-repeat; */
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/* background-position-x: top: 0;; */
+    /* background-position-y: center; */
+	background-size: cover;
+	/* background-attachment: fixed; */
+	overflow: hidden;
+}
+
+/* MAIN openint_container */
+
+.opening_container
+{
+	display: flex;
+	flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening_text
+{
+	margin-top: 8vh;
+	width: 42vw;
+	text-align: center;
+	font-size: clamp(1.5rem, 5vw, 5rem);
+}
+
+.opening_image_block
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	width: 40vw;
+	overflow: hidden;
+}
+
+.opening_image
+{
+	width: 100%;
+	height: 35vh
+}
+
+.location
+{
+	margin-bottom: 6vh;
+}
+
+
 /* Section container and text */
 
 .section_container
 {
 	width: 100%;
-	height: 10vh;
+	height: 13vh;
 	display: flex;
 	justify-content: center;
-
+	align-items: center;
+	background-color: white;
 }
 
 .section_text
@@ -110,4 +160,128 @@
 	font-size: 5vw;
 	font-weight: bolder;
 	color: #000000;
+	max-width: 1366px;
+}
+
+
+  /*  Festival section */
+
+
+.festival_contianer
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+}
+
+.festival_text
+{
+	width: 53vw;
+	height: 70vh;
+	overflow: scroll;
+	background-color: transparent;
+}
+
+
+/* LOCATION LOCATION LOCATION */
+
+
+.location_images {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	width: 100%;
+}
+
+
+.second_row
+{
+	display: flex
+	;
+		flex-direction: row;
+		height: 50%;
+		width: 50vw;
+}
+
+
+/* TRANSPORT */
+
+.accommodation_container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 18vh 7vw;
+	max-width: 1366px;
+}
+
+.transportation_top
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	/* margin: 0 5vw; */
+	/* max-width: 20vw; */
+}
+
+.transportation_top_container
+{
+	max-width: 21vw;
+}
+
+.line_b_transport{
+	width: 0.2rem;
+	background-color: #000000;
+}
+
+.transportation_buttom{
+	background-color: #000000;
+	text-decoration: none;
+	border: none;
+	color: #ffffff;
+	padding: 0.3rem 0.5rem;
+	font-weight: 700;
+	margin: 1rem 0 0 0;
+	/* width: 5vw;
+	height: 10vh; */
+}
+
+
+
+
+  /* less */
+@media (max-width: 1366px) {
+	.main_container {
+	  background-color: rgb(2, 2, 2);
+	}
+}
+
+  /* more then */
+@media (min-width: 1366px) {
+
+	.nav_menu
+	{
+		width: 1366px;
+	}
+	.menu
+	{
+		width: 1366px;
+	}
+	.section_text
+	{
+		font-size: 65px;
+	}
+	.opening_text
+	{
+		font-size: 5rem;
+	}
+	.transportation_top_container {
+		max-width: 304.08px;
+	}
 }
