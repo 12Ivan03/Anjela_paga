@@ -1,3 +1,5 @@
+// nav bar button menu
+
 // const button = document.getElementById("changeBtn");
 // const dropDown = document.getElementById("dropMenu");
 
@@ -10,10 +12,51 @@
 // 	}
 // });
 
-const navbar = document.getElementById("nav_bar");
-const cloneNavbar = navbar.cloneNode(true);
-cloneNavbar.id = "nav_bar_clone";
-document.getElementById("footer_nav").appendChild(cloneNavbar);
+// language button
+const bgLang = document.querySelector('.bg_lang');
+const enLang = document.querySelector('.en_lang');
+
+bgLang.addEventListener('click', () => {
+	bgLang.classList.toggle('act');
+
+	if (!bgLang.classList.contains('act')) {
+		bgLang.classList.add('act');
+	}
+	if (enLang.classList.contains('act')) {
+		enLang.classList.remove('act');
+	}
+});
+
+enLang.addEventListener('click', () => {
+	enLang.classList.toggle('act');
+
+	if (!enLang.classList.contains('act')) {
+		enLang.classList.add('act');
+	}
+	if (bgLang.classList.contains('act')) {
+		bgLang.classList.remove('act');
+	}
+}
+);
+
+// read more button
+
+const readMoreBtn = document.querySelector('.fest_btn');
+const festCon = document.querySelector('.festival_contianer');
+const festText = document.querySelector('.festival_text');
+
+readMoreBtn.addEventListener('click', () => {
+	festCon.classList.toggle('active');
+	festText.classList.toggle('active');
+
+	if (festCon.classList.contains('active') || festText.classList.contains('active')) {
+		readMoreBtn.textContent = 'ЗАТВОРИ';
+	} else {
+		readMoreBtn.textContent = 'ЧЕТИ ОЩЕ';
+	}
+});
+
+// carousel
 
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.nav.prev');
@@ -40,6 +83,12 @@ nextBtn.addEventListener('click', () => {
 });
 
 function updateCarousel() {
-//   const offset = currentIndex * -320; // 300px card + 2*10px margin
-  carousel.style.transform = `translateX(${offset}px)`;
+	carousel.style.transform = `translateX(${offset}px)`;
 }
+
+// Copy nav bar
+
+const navbar = document.getElementById("nav_bar");
+const cloneNavbar = navbar.cloneNode(true);
+cloneNavbar.id = "nav_bar_clone";
+document.getElementById("footer_nav").appendChild(cloneNavbar);
