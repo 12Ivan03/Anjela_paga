@@ -10,34 +10,33 @@
 // 	}
 // });
 
+const navbar = document.getElementById("nav_bar");
+const cloneNavbar = navbar.cloneNode(true);
+cloneNavbar.id = "nav_bar_clone";
+document.getElementById("footer_nav").appendChild(cloneNavbar);
+
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.nav.prev');
 const nextBtn = document.querySelector('.nav.next');
 
 let offset = 0;
-const currentIndex = 120;
+const currentIndex = 220;
 
 prevBtn.addEventListener('click', () => {
-//   if (currentIndex > 0) {
-//     currentIndex--;
 	if (offset >= 0)
 		offset -= currentIndex;
 	else
 		offset = offset;
 	offset += currentIndex;
     updateCarousel();
-//   }
 });
 
 nextBtn.addEventListener('click', () => {
-//   if (currentIndex < 1) { // only one shift needed to show 4th item
-//     currentIndex++;
-	if (offset >= -240)
+	if (offset >= -700)
 		offset -= currentIndex;
 	else
 		offset = offset;
     updateCarousel();
-//   }
 });
 
 function updateCarousel() {
