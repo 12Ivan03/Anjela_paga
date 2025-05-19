@@ -27,7 +27,7 @@
 {
 	/* width: 10vw; */
 	list-style: none;
-	margin-left: 1rem;
+	margin-right: 1.5rem;
 }
 
 .menu > li > a
@@ -97,7 +97,7 @@
 	margin-top: 8vh;
 	width: 55vw;
 	text-align: center;
-	font-size: clamp(1.8rem, 5.3vw, 5.3rem);
+  	font-size: clamp(2.8rem, 7.3vw, 7.3rem);
 }
 
 .opening_image_block
@@ -215,8 +215,12 @@
 
 .icon_transportation > img{
 	width: 4vw;
-
 }
+
+.first_car{
+	width: 5.2vw!important;
+}
+
 .accommodation_container
 {
 	display: flex;

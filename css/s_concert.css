@@ -1,0 +1,97 @@
+
+
+.concert_cover
+{
+	background-position-y: 25%;
+}
+
+.concert_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: auto;
+}
+
+.border_inner_text
+{
+	margin: 3rem 2rem;
+}
+
+.indi_end_prgm
+{
+	margin-bottom: 1.5vh;
+}
+
+.indi_prgm_margine
+{
+	margin: 0 0 1vh 0;
+}
+
+.between_pieces
+{
+	margin-bottom: 4vh;
+}
+
+.p_big
+{
+	font-size: 1.5rem;
+	font-weight: 400;
+
+}
+
+
+
+
+#concert_team {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+
+}
+
+.concert_part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 67vw;
+	height: auto;
+	margin: 6vh 0;
+}
+
+.part_img_container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    height: auto;
+}
+
+.part_image {
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+
+.part_container_long_img
+{
+	max-width: 50vh;
+	height: auto;
+	object-fit: cover;
+}
+
+.part_bio
+{
+	margin-top: 3vh;
+}
+
+/* more than */
+@media (min-width: 1200px) {
+	.concert_part {
+		max-width: 806px;
+	}
+}
