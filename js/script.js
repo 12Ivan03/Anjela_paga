@@ -58,33 +58,45 @@ readMoreBtn.addEventListener('click', () => {
 
 // carousel
 
+const container = document.querySelector('.carousel-container');
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.nav.prev');
 const nextBtn = document.querySelector('.nav.next');
 
 let offset = 0;
-const currentIndex = 220;
+let cardWidth = carousel.querySelector('.card').offsetWidth;
+let maxOffset = 0;
+
+function updateMaxOffset() {
+    const containerWidth = container.offsetWidth;
+    const contentWidth = carousel.scrollWidth;
+    maxOffset = Math.min(0, containerWidth - contentWidth);
+}
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(${offset}px)`;
+}
 
 prevBtn.addEventListener('click', () => {
-	if (offset >= 0)
-		offset -= currentIndex;
-	else
-		offset = offset;
-	offset += currentIndex;
+    offset += cardWidth;
+    if (offset > 0) offset = 0;
     updateCarousel();
 });
 
 nextBtn.addEventListener('click', () => {
-	if (offset >= -700)
-		offset -= currentIndex;
-	else
-		offset = offset;
+    offset -= cardWidth;
+    if (offset < maxOffset) offset = maxOffset;
     updateCarousel();
 });
 
-function updateCarousel() {
-	carousel.style.transform = `translateX(${offset}px)`;
-}
+window.addEventListener('resize', () => {
+    cardWidth = carousel.querySelector('.card').offsetWidth;
+    updateMaxOffset();
+    offset = Math.max(offset, maxOffset);
+    updateCarousel();
+});
+
+updateMaxOffset();
 
 // Copy nav bar no Language buttons
 
@@ -96,3 +108,9 @@ if (cpyNoLang) {
 }
 cloneNavbar.id = "nav_bar_clone";
 document.getElementById("footer_nav").appendChild(cloneNavbar);
+
+// Hamburger menu
+
+document.getElementById("hamburger_btn").addEventListener("click", function () {
+	document.querySelector(".menu").classList.toggle("open");
+});

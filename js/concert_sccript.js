@@ -35,3 +35,9 @@ enLang.addEventListener('click', () => {
 	}
 }
 );
+
+// Hamburger menu
+
+document.getElementById("hamburger_btn").addEventListener("click", function () {
+	document.querySelector(".menu").classList.toggle("open");
+});
