@@ -70,22 +70,22 @@ h6 {
 
 h1
 {
-  font-size: clamp(6.3vw, 4rem, 6.3vw);
-  /* font-size: 5rem; */
+  /* font-size: clamp(6.3vw, 4rem, 6.3vw); */
+  font-size: 4rem;
   font-weight: 700;
 }
 
 h2
 {
-  font-size: clamp(5.5vw, 4rem, 5.5vw);
-  /* font-size: 4rem; */
+  /* font-size: clamp(5.5vw, 4rem, 5.5vw); */
+  font-size: 4rem;
   font-weight: 700;
 }
 
 h3
 {
-  font-size: clamp(3.3vw, 2rem, 3.3vw);
-  /* font-size: 2rem; */
+  /* font-size: clamp(3.3vw, 2rem, 3.3vw); */
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -93,13 +93,32 @@ h4
 {
   font-size: 1.23rem;
   font-weight: 600;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h5{
-  font-size: clamp(2.3vw, 1.5rem, 2.3vw);
-  /* font-size: 1.5rem; */
+  /* font-size: clamp(2.3vw, 1.5rem, 2.3vw); */
+  font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  h2
+  {
+    /* font-size: clamp(5.5vw, 4rem, 5.5vw); */
+    font-size: 3rem;
+  }
+  h3
+  {
+    /* font-size: clamp(3.3vw, 2rem, 3.3vw); */
+    font-size: 1.5rem;
+  }
+}
+
+.p_norm
+{
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .p_bold
