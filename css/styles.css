@@ -375,7 +375,9 @@
 	margin-bottom: 1rem;
 }
 
-
+.mobile  {
+	display: none;
+}
 
 /* TEAM */
 
@@ -611,7 +613,7 @@ iframe{
 		justify-content: left;
 	}
 	.line_b_transport {
-		width: 50vh;
+		width: 75%;
 		height: 0.2rem;
 		margin: 3vh 0 2vh 0;
 		background-color: #000000;
@@ -675,16 +677,25 @@ iframe{
 }
 
 @media (max-width: 670px) {
-	.program_time {
+	/* .program_time {
 		position: absolute;
 		top: 10.2vh;
 		left: -1px;
-	}
+	} */
 	.program_day {
 		width: 95vw;
 	}
-	.program_info_text {
+	/* .program_info_text {
 		margin: 4rem 0 1rem 0;
+	} */
+	 .program_time {
+		display: none;
+	 }
+	.mobile {
+		display: block;
+		font-size: larger;
+		font-weight: 700;
+		margin: 1.5rem 0 0 0;
 	}
     .opening_text {
         width: 60vh;
