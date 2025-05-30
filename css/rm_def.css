@@ -71,21 +71,24 @@ h6 {
 h1
 {
   /* font-size: clamp(6.3vw, 4rem, 6.3vw); */
-  font-size: 4rem;
+  /* font-size: 4.5rem; */
+  font-size: 80px;
   font-weight: 700;
 }
 
 h2
 {
   /* font-size: clamp(5.5vw, 4rem, 5.5vw); */
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 56px;
   font-weight: 700;
 }
 
 h3
 {
   /* font-size: clamp(3.3vw, 2rem, 3.3vw); */
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -102,16 +105,34 @@ h5{
   font-weight: 600;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
+  h1
+  {
+    font-size: 60px;
+  }
   h2
   {
-    /* font-size: clamp(5.5vw, 4rem, 5.5vw); */
-    font-size: 3rem;
+    font-size: 36px;
   }
   h3
   {
-    /* font-size: clamp(3.3vw, 2rem, 3.3vw); */
-    font-size: 1.5rem;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1
+  {
+    font-size: 40px;
+  }
+  h2
+  {
+    font-size: 26px;
+  }
+  h3
+  {
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 
