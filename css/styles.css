@@ -135,9 +135,7 @@
 	max-width: 1366px;
 }
 
-
-  /*  Festival section */
-
+/*  Festival section */
 
 .festival_contianer
 {
@@ -177,7 +175,6 @@
 }
 
 /* LOCATION LOCATION LOCATION */
-
 
 .location_images {
 	display: flex;
@@ -464,16 +461,6 @@ iframe{
 	font-size: 0.6rem;
 }
 
-/* @media (max-width: 900px) {
-	.program_content {
-		flex-direction: column;
-		align-items: center;
-	}
-	.tablet_margin{
-		margin-top: 6vh;
-	}
-} */
-
 /* General styles */
 .hamburger {
 	display: none;
@@ -502,14 +489,14 @@ iframe{
 	margin: 0;
 }
 
-  /* less */
+/* less */
 @media (max-width: 1366px) {
 	.main_container {
 	  background-color: rgb(2, 2, 2);
 	}
 }
 
-  /* more then */
+/* more then */
 @media (min-width: 1366px) {
 
 	h4
@@ -605,10 +592,6 @@ iframe{
 }
 
 @media (max-width: 900px) {
-
-	/* .opening_text {
-		width: 80vh;
-	} */
 	.transportation_top{
 		display: flex;
 		justify-content: space-around;
@@ -693,9 +676,6 @@ iframe{
 		font-weight: 700;
 		margin: 1.5rem 0 0 0;
 	}
-    /* .opening_text {
-        width: 55vh;
-    } */
 	.accommodation_container {
 		margin: 4rem 3rem 3.5rem 3rem;
 	}
@@ -709,9 +689,3 @@ iframe{
 		width: 90vw;
 	}
 }
-
-/* @media (max-width: 400px) {
-	.opening_text {
-		width: 50vh
-	}
-} */
