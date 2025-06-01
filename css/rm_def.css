@@ -22,6 +22,8 @@ ol {
 
 /* 3. Set core body defaults */
 body {
+  font-family: 'JostRegular';
+  src: url('./jost/static/Jost-Regular.ttf') format('truetype');
   height: 100%;
   line-height: 1.5;
   font-family: system-ui, sans-serif;
@@ -70,10 +72,9 @@ h6 {
 
 h1
 {
-  /* font-size: clamp(6.3vw, 4rem, 6.3vw); */
-  /* font-size: 4.5rem; */
+  font-weight: bold;
   font-size: 80px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 h2
@@ -134,6 +135,43 @@ h5{
     font-size: 24px;
     font-weight: 700;
   }
+}
+
+@media (max-width: 370px) {
+  h1
+  {
+    font-size: 35px;
+  }
+  h2
+  {
+    font-size: 21px;
+  }
+  h3
+  {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+p,
+a,
+li,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'JostRegular';
+  src: url('./jost/static/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JostRegular';
+  src: url('./jost/static/Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
 
 .p_norm
