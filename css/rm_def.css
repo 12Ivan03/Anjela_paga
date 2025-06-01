@@ -106,6 +106,14 @@ h5{
   font-weight: 600;
 }
 
+/* 9. added features */
+
+@font-face {
+  font-family: 'JostRegular';
+  src: url('./jost/static/Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
 @media (max-width: 750px) {
   h1
   {
@@ -166,12 +174,6 @@ h6
 {
   font-family: 'JostRegular';
   src: url('./jost/static/Jost-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'JostRegular';
-  src: url('./jost/static/Jost-Regular.ttf') format('truetype');
-  font-weight: normal;
 }
 
 .p_norm
