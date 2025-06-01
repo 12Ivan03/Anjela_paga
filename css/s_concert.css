@@ -85,6 +85,24 @@
 	margin-top: 3vh;
 }
 
+.extra_margin
+{
+	margin-top: 1rem;;
+}
+
+.text_center
+{
+	text-align: center;
+}
+
+.first_concert_part
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* more than */
 @media (min-width: 1200px) {
 	.concert_part {

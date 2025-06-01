@@ -380,6 +380,7 @@
 
 .carousel {
 	display: flex;
+	align-items: flex-start;
 	transition: transform 0.5s ease-in-out;
 	width: 1450px;
 	padding: 0 5vw;
@@ -426,6 +427,11 @@
 
 .card_img{
 	width: 150px;
+}
+
+.titles
+{
+	font-size: 0.8rem;
 }
 
 /* VIDEO */
