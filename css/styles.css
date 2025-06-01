@@ -183,7 +183,6 @@
 	width: 100%;
 }
 
-
 .second_row
 {
 	display: flex;
@@ -192,6 +191,13 @@
 	width: 50vw;
 }
 
+.third_row
+{
+	display: flex;
+	flex-direction: row;
+	height: 20%;
+	width: 50vw;
+}
 
 /* TRANSPORT */
 
