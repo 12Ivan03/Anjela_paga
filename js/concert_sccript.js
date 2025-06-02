@@ -1,13 +1,13 @@
 // Copy nav bar no Language buttons
 
-const navbar = document.getElementById("nav_bar");
-const cloneNavbar = navbar.cloneNode(true);
-const cpyNoLang = cloneNavbar.querySelector("#language");
-if (cpyNoLang) {
-	cpyNoLang.remove();
-}
-cloneNavbar.id = "nav_bar_clone";
-document.getElementById("footer_nav_part").appendChild(cloneNavbar);
+// const navbar = document.getElementById("nav_bar");
+// const cloneNavbar = navbar.cloneNode(true);
+// const cpyNoLang = cloneNavbar.querySelector("#language");
+// if (cpyNoLang) {
+// 	cpyNoLang.remove();
+// }
+// cloneNavbar.id = "nav_bar_clone";
+// document.getElementById("footer_nav_part").appendChild(cloneNavbar);
 
 // language button
 const bgLang = document.querySelector('.bg_lang');

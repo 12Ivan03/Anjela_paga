@@ -211,7 +211,8 @@
 }
 
 .first_car{
-	width: 5.2vw!important;
+	height: 39.7px;
+	width: 48.7px !important;
 }
 
 .accommodation_container
@@ -457,6 +458,7 @@ iframe{
 /* FOOTER */
 
 .footer{
+	padding-top: 1rem;
 	background-color: #000000;
 }
 
@@ -628,6 +630,16 @@ iframe{
 	.festival_text{
 		width: 80vw;
 	}
+	.icon_transportation {
+		align-self: center;
+		height: 43.7px;
+        width: 43.7px;
+		margin: 1rem;
+	}
+	.icon_transportation > img{
+		/* height: 43.7px; */
+        width: 43.7px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -654,16 +666,6 @@ iframe{
 		align-items: center;
 		width: auto;
 		margin: 1rem;
-	}
-	.icon_transportation {
-		align-self: center;
-		height: 5vw;
-        width: 5vw;
-		margin: 1rem;
-	}
-	.icon_transportation > img{
-		height: 5vw;
-        width: 5vw;
 	}
 }
 
@@ -699,5 +701,14 @@ iframe{
 	}
 	.opening_image_block {
 		width: 90vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel-container {
+		overflow-x: auto;
+		overflow-y: hidden;
+		/* -webkit-overflow-scrolling: touch; */
+		scroll-behavior: smooth;
 	}
 }

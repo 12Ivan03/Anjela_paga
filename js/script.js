@@ -26,22 +26,43 @@ enLang.addEventListener('click', () => {
 }
 );
 
-// read more button
+// read more button that goes back
 
 const readMoreBtn = document.querySelector('.fest_btn');
 const festCon = document.querySelector('.festival_contianer');
 const festText = document.querySelector('.festival_text');
+const aboutSection = document.getElementById('about');
 
 readMoreBtn.addEventListener('click', () => {
-	festCon.classList.toggle('active');
-	festText.classList.toggle('active');
+    const isOpening = !festCon.classList.contains('active') && !festText.classList.contains('active');
 
-	if (festCon.classList.contains('active') || festText.classList.contains('active')) {
-		readMoreBtn.textContent = 'ЗАТВОРИ';
-	} else {
-		readMoreBtn.textContent = 'ЧЕТИ ОЩЕ';
-	}
+    festCon.classList.toggle('active');
+    festText.classList.toggle('active');
+
+    if (festCon.classList.contains('active') || festText.classList.contains('active')) {
+        readMoreBtn.textContent = 'ЗАТВОРИ';
+    } else {
+        readMoreBtn.textContent = 'ЧЕТИ ОЩЕ';
+        // Always scroll to the start of #about
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
 });
+
+
+// const readMoreBtn = document.querySelector('.fest_btn');
+// const festCon = document.querySelector('.festival_contianer');
+// const festText = document.querySelector('.festival_text');
+
+// readMoreBtn.addEventListener('click', () => {
+// 	festCon.classList.toggle('active');
+// 	festText.classList.toggle('active');
+
+// 	if (festCon.classList.contains('active') || festText.classList.contains('active')) {
+// 		readMoreBtn.textContent = 'ЗАТВОРИ';
+// 	} else {
+// 		readMoreBtn.textContent = 'ЧЕТИ ОЩЕ';
+// 	}
+// });
 
 // carousel
 
@@ -87,14 +108,14 @@ updateMaxOffset();
 
 // Copy nav bar no Language buttons
 
-const navbar = document.getElementById("nav_bar");
-const cloneNavbar = navbar.cloneNode(true);
-const cpyNoLang = cloneNavbar.querySelector("#language");
-if (cpyNoLang) {
-	cpyNoLang.remove();
-}
-cloneNavbar.id = "nav_bar_clone";
-document.getElementById("footer_nav").appendChild(cloneNavbar);
+// const navbar = document.getElementById("nav_bar");
+// const cloneNavbar = navbar.cloneNode(true);
+// const cpyNoLang = cloneNavbar.querySelector("#language");
+// if (cpyNoLang) {
+// 	cpyNoLang.remove();
+// }
+// cloneNavbar.id = "nav_bar_clone";
+// document.getElementById("footer_nav").appendChild(cloneNavbar);
 
 // Hamburger menu
 
