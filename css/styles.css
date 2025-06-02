@@ -206,13 +206,13 @@
 	height: 4vw;
 }
 
-.icon_transportation > img{
+.second_img{
 	width: 4vw;
 }
 
 .first_car{
 	height: 39.7px;
-	width: 48.7px !important;
+	width: 48.7px;
 }
 
 .accommodation_container
@@ -633,12 +633,16 @@ iframe{
 	.icon_transportation {
 		align-self: center;
 		height: 43.7px;
-        width: 43.7px;
+		width: 58.7px;
 		margin: 1rem;
 	}
-	.icon_transportation > img{
+	.second_img{
 		/* height: 43.7px; */
         width: 43.7px;
+	}
+	.first_car{
+		height: 46.7px;
+		width: 57.7px;
 	}
 }
 
